@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Peeps</title>
+</head>
+<body>
+<ul>
+	{{range $sage := .Wisdom}}
+    <li>{{$sage.Name}}-{{$sage.Motto}}</li>
+	{{end}}
+	{{range $car := .Transport}}
+	<li>{{$car.Manufacturer}}-{{$car.Model}}</li>
+	{{end}}
+</ul>
+</body>
+</html>
